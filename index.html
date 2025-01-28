@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>JS Documentation</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#Introduction"> Introduction </a>
+        </li>
+        <li>
+          <a class="nav-link" href="#What_you_should_already_know">
+            What you should already know
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="#JavaScript_vs_Java">
+            JavaScript vs Java
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Basic_Programming_Concepts">
+            Basic Programming Concepts
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Basics_of_JavaScript_Syntax">
+            Basics of JavaScript Syntax
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Basic_Features"> Basic Features </a>
+        </li>
+        <li>
+          <a class="nav-link" href="#New_JavaScript_Features_2025">
+            New JavaScript Features (2025)
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Practice_Task"> Practice Task </a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Conclusion">Conclusion</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Reference">Reference</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            JavaScript is a versatile programming language primarily used to
+            create dynamic and interactive content on websites. It is the
+            backbone of web development, alongside HTML and CSS, and continues
+            to evolve with new features and improvements every year. This
+            documentation covers the basics of JavaScript syntax and introduces
+            some new features available in 2025.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="What_you_should_already_know">
+        <header>What you should already know</header>
+        <article>
+          <p>
+            Before diving into JavaScript, it’s helpful to have a basic
+            understanding of:
+          </p>
+          <ul>
+            <li>
+              <b>HTML:</b> The structure of web pages, including elements and
+              attributes.
+            </li>
+            <li>
+              <b>CSS:</b> Styling web pages using classes, IDs, and selectors.
+            </li>
+            <li>
+              <b>Programming Fundamentals:</b> General concepts like variables,
+              loops, and conditionals (even if from another language).
+            </li>
+          </ul>
+          <p>
+            Having this foundational knowledge will make learning JavaScript
+            much easier and more intuitive.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="JavaScript_vs_Java">
+        <header>JavaScript vs Java</header>
+        <article>
+          <p>
+            Despite their similar names, JavaScript and Java are fundamentally
+            different:
+          </p>
+          <ul>
+            <li>
+              <b>Purpose:</b>
+              <ul>
+                <li>
+                  <b>JavaScript:</b> A scripting language designed to add
+                  interactivity to web pages. It runs in browsers and is
+                  primarily used for front-end and back-end web development.
+                </li>
+                <li>
+                  <b>Java:</b> A general-purpose programming language used for
+                  building applications, including web, mobile, and desktop
+                  software.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <b>Execution Environment:</b>
+              <ul>
+                <li>
+                  <b>JavaScript:</b> Runs in web browsers and uses a
+                  Just-In-Time (JIT) compiler.
+                </li>
+                <li>
+                  <b>Java:</b> Runs in the Java Virtual Machine (JVM) and is
+                  compiled into bytecode before execution.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <b>Typing:</b>
+              <ul>
+                <li>
+                  <b>JavaScript:</b> Dynamically typed (variable types are
+                  determined at runtime).
+                </li>
+                <li>
+                  <b>Java:</b> Statically typed (variable types are declared
+                  explicitly).
+                </li>
+              </ul>
+            </li>
+            <li>
+              <b>Syntax:</b>
+              <ul>
+                <li>
+                  <b>JavaScript:</b> Lightweight and flexible syntax, optimized
+                  for the web.
+                </li>
+                <li>
+                  <b>Java:</b> Heavier, object-oriented syntax with stricter
+                  rules.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="Basic_Programming_Concepts">
+        <header>Basic Programming Concepts</header>
+        <article>
+          <p>
+            Before diving into JavaScript specifics, let’s review a few key
+            programming concepts that form the foundation of any programming
+            language:
+          </p>
+          <section class="concepts-section" id="Variables">
+            <header>Variables</header>
+            <article>
+              <p>
+                <b>Definition:</b> Variables are containers for storing data
+                values. They allow programs to manipulate and keep track of
+                information.
+              </p>
+              <p>
+                <b>Example:</b>
+                <code class="js-code">
+                  let age = 25; // Variable to store age const name = "Alice";
+                  // Constant variable for name
+                </code>
+              </p>
+            </article>
+          </section>
+          <section class="concepts-section" id="Data_Types">
+            <header>Data Types</header>
+            <article>
+              <p>
+                <b>Definition:</b> Data types classify the type of value a
+                variable can hold, such as numbers, strings, and booleans.
+              </p>
+              <p>
+                <b>Examples:</b>
+                <code class="js-code">
+                  let number = 42; // Number let text = "Hello!"; // String let
+                  isOnline = true; // Boolean
+                </code>
+              </p>
+            </article>
+          </section>
+          <section class="concepts-section" id="Functions">
+            <header>Functions</header>
+            <article>
+              <p>
+                <b>Definition:</b> Functions are blocks of reusable code
+                designed to perform specific tasks.
+              </p>
+              <p>
+                <b>Example:</b>
+                <code class="js-code">
+                  function add(a, b) { return a + b; // Adds two numbers and
+                  returns the result } console.log(add(2, 3)); // Output: 5
+                </code>
+              </p>
+            </article>
+          </section>
+          <section class="concepts-section" id="Conditionals">
+            <header>Conditionals</header>
+            <article>
+              <p>
+                <b>Definition:</b> Conditionals allow a program to make
+                decisions and execute different code paths based on certain
+                conditions.
+              </p>
+              <p>
+                <b>Example:</b>
+                <code class="js-code">
+                  if (age >= 18) { console.log("You are an adult."); } else {
+                  console.log("You are a minor."); }
+                </code>
+              </p>
+            </article>
+          </section>
+          <section class="concepts-section" id="Loops">
+            <header>Loops</header>
+            <article>
+              <p>
+                <b>Definition:</b> Loops allow repetitive execution of code as
+                long as a specified condition is true.
+              </p>
+              <p>
+                <b>Examples:</b>
+                <code class="js-code">
+                  // For loop for (let i = 0; i < 5; i++) { console.log(i); //
+                  Prints 0, 1, 2, 3, 4 } // While loop let count = 0; while
+                  (count < 3) { console.log(count); // Prints 0, 1, 2 count++; }
+                </code>
+              </p>
+            </article>
+          </section>
+        </article>
+      </section>
+
+      <section class="main-section" id="Basics_of_JavaScript_Syntax">
+        <header>Basics of JavaScript Syntax</header>
+        <article>
+          <h2>Adding JavaScript to a Web Page</h2>
+          <p>You can add JavaScript to an HTML file using the script tag:</p>
+          <pre class="html-code">
+            &lt;html lang="en">
+            &lt;head>
+                &lt;title>JavaScript Example&lt;/title>
+            &lt;/head>
+            &lt;body>
+                &lt;h2>Welcome!&lt;/h2>
+                &lt;script>
+                    console.log("Hello World!");
+                &lt;/script>
+            &lt;/body>
+            &lt;/html>
+           </pre
+          >
+          <section class="syntax-section" id="Variables">
+            <header>Variables</header>
+            <article>
+              <p>
+                Variables are used to store data. You can declare variables in
+                three ways:
+              </p>
+              <code class="js-code">
+                let message = "Hello!"; // Block-scoped and can be updated const
+                pi = 3.14; // Block-scoped and cannot be updated var name =
+                "John"; // Function-scoped (older syntax)
+              </code>
+            </article>
+          </section>
+          <section class="syntax-section" id="Data_Types">
+            <header>Data Types</header>
+            <article>
+              <p>JavaScript supports various data types:</p>
+              <ul class="data-types">
+                <li><b>Number:</b> <code>let age = 30;</code></li>
+                <li><b>String: </b> <code>let greeting = "Hi!";</code></li>
+                <li><b>Boolean:</b> <code>let isOnline = true;</code></li>
+                <li>
+                  <b>Array: </b>
+                  <code>let fruits = ["apple", "banana", "cherry"];</code>
+                </li>
+                <li>
+                  <b>Object:</b>
+                  <code>let user = { name: "Alice", age: 25 };</code>
+                </li>
+              </ul>
+              <h2>Printing to the Console</h2>
+              <p>
+                Use <code>console.log()</code> to display messages in the
+                browser's console:
+              </p>
+              <code class="js-code"> console.log("JavaScript is fun!"); </code>
+            </article>
+          </section>
+        </article>
+      </section>
+
+      <section class="main-section" id="Basic_Features">
+        <header>Basic Features</header>
+        <article>
+          <section class="features-section" id="Functions">
+            <header>Functions</header>
+            <article>
+              <p>Functions are reusable blocks of code:</p>
+              <code class="js-code">
+                function greet(name) { return `Hello, ${name}!`; }
+                console.log(greet("Alice"));
+              </code>
+              <p>Or use arrow functions for a shorter syntax:</p>
+              <code class="js-code">
+                const add = (a, b) => a + b; console.log(add(2, 3)); // Output:
+                5
+              </code>
+              <h2>Conditionals</h2>
+              <p>
+                Conditionals let you perform different actions based on
+                conditions:
+              </p>
+              <code class="js-code">
+                let age = 18; if (age >= 18) { console.log("You are an adult.");
+                } else { console.log("You are a minor."); }
+              </code>
+            </article>
+          </section>
+          <section class="features-section" id="Loops">
+            <header>Loops</header>
+            <article>
+              <p>Loops allow you to repeat actions:</p>
+              <code class="js-code">
+                for (let i = 0; i < 5; i++) { console.log(i); } const fruits =
+                ["apple", "banana", "cherry"]; fruits.forEach(fruit =>
+                console.log(fruit));
+              </code>
+            </article>
+          </section>
+        </article>
+      </section>
+
+      <section class="main-section" id="New_JavaScript_Features_(2025)">
+        <header>New JavaScript Features (2025)</header>
+        <article>
+          <header><code>pipeline</code> operator <code>(|>)</code></header>
+          <section class="features2025-section">
+            <p>Makes chaining functions cleaner:</p>
+            <code class="js-code">
+              const double = x => x * 2; const increment = x => x + 1; const
+              result = 5 |> double |> increment; console.log(result); // Output:
+              11
+            </code>
+          </section>
+        </article>
+
+        <h2><code>do</code> expressions</h2>
+        <p>Allows evaluating multiple statements:</p>
+        <code class="js-code">
+          let result = do { if (age > 18) { "Adult"; } else { "Minor"; } };
+          console.log(result);
+        </code>
+        <h2>Records and Tuples</h2>
+        <p>Immutable data structures:</p>
+        <code class="js-code">
+          const record = #{ name: "Alice", age: 25 }; const tuple = #[1, 2, 3];
+          console.log(record.name); // Output: Alice console.log(tuple[0]); //
+          Output: 1
+        </code>
+      </section>
+
+      <section class="main-section" id="Practice_Task">
+        <header>Practice Task</header>
+        <p>
+          Try creating a simple web page with JavaScript that displays an alert
+          when a button is clicked:
+        </p>
+        <pre>
+            &lt;html>
+              &lt;body>
+                &lt;button onclick="showMessage()">Click Me&lt;/button> 
+                &lt;script>
+                   function showMessage() {
+                      alert("Hello, JavaScript Beginner!");
+                   }
+                &lt;/script> 
+              &lt;/body>
+            &lt;/html>
+
+        </pre>
+      </section>
+
+      <section class="main-section" id="Conclusion">
+        <header>Conclusion</header>
+        <p>
+          JavaScript is an exciting and powerful language to learn! Start
+          experimenting with the basics, and you’ll be building interactive
+          websites in no time. Keep practicing and exploring new features to
+          stay updated.
+        </p>
+        <p>Happy coding! <span>😊</span></p>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <p>
+            All the documentation in this page is taken from
+            <a href="https://developer.mozilla.org/en-US/">MDN</a>.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
